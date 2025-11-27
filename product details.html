@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+
+    <!-- Normalize & Icons -->
+    <link rel="stylesheet" href="CSS/normaliz.css" />
+    <link rel="stylesheet" href="CSS/product details.css" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav">
+            <div class="nav_left">
+                <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo-link" aria-label="Go to homepage">
+                    <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+                <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+                <li role="none"><a role="menuitem" href="shop.html">Shop</a></li>
+                <li role="none"><a role="menuitem" href="product details.html" aria-current="page">Product Details</a>
+                </li>
+                <li role="none"><a role="menuitem" href="login.html">Login</a></li>
+                <li role="none"><a role="menuitem" href="contactUs.html">Contact</a></li>
+                <li role="none"><a role="menuitem" href="blog.html">About Us</a></li>
+            </ul>
+
+            <!-- Icons -->
+            <div class="nav_icons">
+                <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-btn" aria-label="Favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="badge">3</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Searchbar -->
+        <div class="searchbar" id="searchbar">
+            <div class="container">
+                <form action="#" role="search" aria-label="Site search">
+                    <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+                    <button type="button" class="close" id="searchClose" aria-label="Close search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="content">
+        <div class="text">
+            <h1>Product Details</h1>
+            <p>
+                Explore a wide range of premium products we offer.<br />
+                Whether you're looking for sofas, chairs or tables,<br />
+                we've got everything you need.
+            </p>
+        </div>
+        <div class="img-container">
+            <img class="banner-img" src="imgs/products-details-banner.png" alt="Banner" />
+        </div>
+    </section>
+
+    <!-- Product 1 -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="imgs/IMG-the_catania_coastal_dining_set.jpeg" alt="Catania Dining Set" />
+        </div>
+        <div class="product-info">
+            <h1>Catania Coastal Dining Set</h1>
+            <h2 class="price">45,565 EGP</h2>
+            <p><strong>Category:</strong> <span class="highlight">Dining Sets</span></p>
+            <p><strong>Availability:</strong> In Stock</p>
+            <p class="description">
+                Bring timeless sophistication and relaxed coastal charm to your outdoor gatherings
+                with the Catania Coastal 7-Piece Outdoor Dining Set. Crafted with precision and built for
+                comfort, it effortlessly blends natural materials with modern sensibility.
+            </p>
+
+            <div class="quantity" data-qty>
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" aria-live="polite">1</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+            </div>
+
+            <a href="cart.html"><button class="add-to-cart">ADD TO CART</button></a>
+            <button class="share-btn">📤 Share</button>
+        </div>
+    </section>
+
+    <!-- Product 2 -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="imgs/IMG-the_cloud_plush_sofa.jpeg" alt="Cloud Plush Sofa" />
+        </div>
+        <div class="product-info">
+            <h1>The Cloud Plush Sofa</h1>
+            <h2 class="price">32,495 EGP</h2>
+            <p><strong>Category:</strong> <span class="highlight">Sofas</span></p>
+            <p><strong>Availability:</strong> In Stock</p>
+            <p class="description">
+                Sink into serenity with The Cloud Plush Chaise Sectional Sofa — a luxuriously oversized
+                lounge piece designed for unmatched comfort and casual elegance.
+            </p>
+
+            <div class="quantity" data-qty>
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" aria-live="polite">1</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+            </div>
+
+            <a href="cart.html"><button class="add-to-cart">ADD TO CART</button></a>
+            <button class="share-btn">📤 Share</button>
+        </div>
+    </section>
+
+    <!-- Product 3 -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="imgs/IMG-artiss_lounge_chair.jpg" alt="Artiss Lounge Chair" />
+        </div>
+        <div class="product-info">
+            <h1>Artiss Lounge Chair</h1>
+            <h2 class="price">26,000 EGP</h2>
+            <p><strong>Category:</strong> <span class="highlight">Chairs</span></p>
+            <p><strong>Availability:</strong> In Stock</p>
+            <p class="description">
+                Unwind in style with the elegant Artiss Lounge Chair and matching ottoman.
+                This modern chair combines comfort and aesthetic appeal, perfect for any home space.
+            </p>
+
+            <div class="quantity" data-qty>
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" aria-live="polite">1</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+            </div>
+
+            <a href="cart.html"><button class="add-to-cart">ADD TO CART</button></a>
+            <button class="share-btn">📤 Share</button>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-grid">
+            <div class="related-card">
+                <img src="imgs/IMG-the_nova_chair.jpg" alt="The Nova Chair" />
+                <h3>The Nova Chair</h3>
+                <p class="price">15,499 EGP</p>
+            </div>
+            <div class="related-card">
+                <img src="imgs/IMG-the_evangeline_table.jpeg" alt="The Evangeline Table" />
+                <h3>The Evangeline Table</h3>
+                <p class="price">7,865 EGP</p>
+            </div>
+            <div class="related-card">
+                <img src="imgs/IMG-the_japandi_sofa.png" alt="The Japandi Sofa" />
+                <h3>The Japandi Table</h3>
+                <p class="price">27,995 EGP</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p class="stars">★★★★★</p>
+            <p>"Absolutely love the quality and comfort! Worth every penny."</p>
+            <p><strong>- Sara M.</strong></p>
+        </div>
+        <div class="review">
+            <p class="stars">★★★★☆</p>
+            <p>"Stylish and durable. Delivery took a bit longer but happy overall."</p>
+            <p><strong>- Omar A.</strong></p>
+        </div>
+        <div class="review">
+            <p class="stars">★★★★★</p>
+            <p>"Perfect addition to my home. Will definitely shop again."</p>
+            <p><strong>- Lina K.</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer">
+            <div class="footer_grid">
+                <!-- About -->
+                <div>
+                    <h3>About HABITUS</h3>
+                    <p>Premium furniture crafted for modern living. Comfort, quality, and timeless design.</p>
+                </div>
+                <!-- Customer Service -->
+                <div>
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Shop -->
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">Sofas</a></li>
+                        <li><a href="shop.html">Chairs</a></li>
+                        <li><a href="shop.html">Tables</a></li>
+                        <li><a href="shop.html">Storage</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="blog.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="Javascript/product details.js"></script>
+</body>
+
+</html>

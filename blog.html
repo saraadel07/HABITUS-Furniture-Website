@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/blog.css" />
+    <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+
+<body>
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav">
+            <div class="nav_left">
+                <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo-link" aria-label="Go to homepage">
+                    <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+                </a>
+            </div>
+
+            <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+                <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+                <li role="none"><a role="menuitem" href="shop.html">Shop</a></li>
+                <li role="none"><a role="menuitem" href="product details.html">Product Details</a></li>
+                <li role="none"><a role="menuitem" href="login.html">Login</a></li>
+                <li role="none"><a role="menuitem" href="contactUs.html">Contact</a></li>
+                <li role="none"><a role="menuitem" href="blog.html" aria-current="page">About Us</a></li>
+            </ul>
+
+            <div class="nav_icons">
+                <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-btn" aria-label="Favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="badge">3</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Searchbar -->
+        <div class="searchbar" id="searchbar">
+            <div class="container">
+                <form action="#" role="search" aria-label="Site search">
+                    <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+                    <button type="button" class="close" id="searchClose" aria-label="Close search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="about-hero">
+        <img src="imgs/about us/hero_in_aboutus.jpeg" alt="Warm, modern living room display in our showroom"
+            class="hero-bg">
+        <div class="wrap container">
+            <span class="kicker">Since 2015</span>
+            <h1>Crafting Comfort & Style</h1>
+            <p>We design timeless furniture with precision and passion—made to live beautifully in your home.</p>
+            <a href="shop.html" class="btn-accent">Explore the Collection</a>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat">
+            <h2>1000+</h2>
+            <p>Products Sold</p>
+        </div>
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat">
+            <h2>10+</h2>
+            <p>Years of Craftsmanship</p>
+        </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="container">
+        <div class="split">
+            <div class="image-ring">
+                <img src="imgs/about us/vision.jpeg" alt="Craftsman sanding a solid-wood tabletop in our workshop"
+                    class="img-cover">
+            </div>
+            <div>
+                <h2>Our Vision</h2>
+                <p>From sustainably sourced woods to durable upholstery, every piece blends modern lines with everyday
+                    comfort.</p>
+                <p>We partner with local artisans and finish each item by hand to ensure long-lasting quality.</p>
+                <a class="btn-accent" href="contactUs.html">Talk to our team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Bring Comfort to Your Home</h2>
+        <p>Explore our collection of premium furniture designed to suit every lifestyle.</p>
+        <a href="shop.html" class="shop-now-btn">Shop Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 FurniShop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Javascript/blog.js"></script>
+</body>
+
+</html>

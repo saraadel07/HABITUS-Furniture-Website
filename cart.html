@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+
+  <!-- main css file -->
+  <link rel="stylesheet" href="CSS\cart.css">
+  <link rel="stylesheet" href="CSS/normaliz.css">
+
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Dark mode toggle -->
+  <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="nav_left">
+        <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo-link" aria-label="Go to homepage">
+          <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+        </a>
+      </div>
+
+      <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="shop.html">Shop</a></li>
+        <li role="none"><a role="menuitem" href="product details.html">Product Details</a></li>
+        <li role="none"><a role="menuitem" href="login.html">Login</a></li>
+        <li role="none"><a role="menuitem" href="contactUs.html">Contact</a></li>
+        <li role="none"><a role="menuitem" href="blog.html">About Us</a></li>
+      </ul>
+
+      <div class="nav_icons">
+        <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-btn" aria-label="Favorites">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart cart-active" aria-label="Cart">
+          <i class="fa-solid fa-cart-plus"></i>
+          <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Searchbar -->
+    <div class="searchbar" id="searchbar">
+      <div class="container">
+        <form action="#" role="search" aria-label="Site search">
+          <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+          <button type="button" class="close" id="searchClose" aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- start product in cart (table) -->
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="cart-body">
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="product-cell">
+                <img src="imgs\best sellers\IMG-artiss_lounge_chair.jpg" class="product-image" alt="Blackberry" />
+                ِArtiss Lounge Chair
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>26,000 EGP</td>
+        <td>
+          <div class="quantity-controls">
+            <input type="number" value="1" min="0" onchange="updateTotal(this)">
+          </div>
+        </td>
+        <td class="total-cell">26,000 EGP</td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="product-cell">
+                <img src="imgs\best sellers\IMG-the_amalfi_armchair.png" class="product-image" alt="Blackberry" />
+                The Amalfi Chair
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>23,995 EGP</td>
+        <td>
+          <div class="quantity-controls">
+            <input type="number" value="1" min="0" onchange="updateTotal(this)">
+          </div>
+        </td>
+        <td class="total-cell">23,995 EGP</td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="product-cell">
+                <img src="imgs\best sellers\IMG-the_campiello_sofa.jpeg" class="product-image" alt="Blackberry" />
+                The Campiello Sofa
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>32,495 EGP</td>
+        <td>
+          <div class="quantity-controls">
+            <input type="number" value="1" min="0" onchange="updateTotal(this)">
+          </div>
+        </td>
+        <td class="total-cell">32,495 EGP</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- end table -->
+
+  <p id="grand-total">Grand Total: 82,490 EGP</p>
+
+  <nav class="home-btn submit-order-btn">
+    <ul>
+      <li class="home-button">
+        <a href="#" id="submitOrderBtn">Submit Order</a>
+      </li>
+    </ul>
+  </nav>
+
+  <p id="order-message" style="text-align: end; font-weight: bold; margin-right: 5%;"></p>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 FurniShop. All Rights Reserved.</p>
+  </footer>
+
+  <script src="Javascript\cart.js"></script>
+
+</body>

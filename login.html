@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+
+<body>
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav">
+            <div class="nav_left">
+                <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo-link" aria-label="Go to homepage">
+                    <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+                </a>
+            </div>
+
+            <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+                <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+                <li role="none"><a role="menuitem" href="shop.html">Shop</a></li>
+                <li role="none"><a role="menuitem" href="product details.html">Product Details</a></li>
+                <li role="none"><a role="menuitem" href="login.html" aria-current="page">Login</a></li>
+                <li role="none"><a role="menuitem" href="contactUs.html">Contact</a></li>
+                <li role="none"><a role="menuitem" href="blog.html">About Us</a></li>
+            </ul>
+
+            <div class="nav_icons">
+                <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-btn" aria-label="Favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="badge">3</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Searchbar -->
+        <div class="searchbar" id="searchbar">
+            <div class="container">
+                <form action="#" role="search" aria-label="Site search">
+                    <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+                    <button type="button" class="close" id="searchClose" aria-label="Close search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- form -->
+    <div class="auth-container">
+
+        <div class="auth-form">
+            <h1>Welcome Back</h1>
+            <form>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="auth-btn" onclick="window.location.href='index.html'">Login</button>
+                <p class="switch">Don’t have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+        </div>
+
+        <div class="auth-image">
+            <img src="imgs/login/login_img.jpeg" alt="Decor inspiration">
+        </div>
+
+    </div>
+
+    <script src="Javascript/login.js"></script>
+
+</body>
+
+</html>

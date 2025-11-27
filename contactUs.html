@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Page</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/contactUs.css" />
+  <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+
+<body>
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Left Nav -->
+      <div class="nav_left">
+        <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo-link" aria-label="Go to homepage">
+          <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+        </a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="product details.html">Product Details</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactUs.html" aria-current="page">Contact</a></li>
+        <li><a href="blog.html">About Us</a></li>
+      </ul>
+
+      <!-- Nav Icons -->
+      <div class="nav_icons">
+        <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-btn" aria-label="Favorites">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+          <i class="fa-solid fa-cart-plus"></i>
+          <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Searchbar -->
+    <div class="searchbar" id="searchbar">
+      <div class="container">
+        <form action="#" role="search" aria-label="Site search">
+          <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+          <button type="button" class="close" id="searchClose" aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Fill out the form or reach us directly.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Furniture Street, Cairo, Egypt</p>
+        <p><strong>Phone:</strong> +20 111 222 333</p>
+        <p><strong>Email:</strong> habitus@furnitureshop.com</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="map-section">
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.006180014257!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjkiTiAzMcKwMTQnMDguNiJF!5e0!3m2!1sen!2seg!4v0000000000"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+  <section class="review-section">
+    <div class="container">
+      <h2>Give a Review</h2>
+      <div class="review-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <select required>
+            <option value="">Rate Us</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+          <textarea rows="5" placeholder="Write your review..." required></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Furniture Shop. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="Javascript/contactUs.js"></script>
+</body>
+
+</html>

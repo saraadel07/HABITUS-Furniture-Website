@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/shop.css" />
+    <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+
+<body>
+    <!-- Dark mode toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav">
+            <div class="nav_left">
+                <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="index.html" class="logo-link" aria-label="Go to homepage">
+                    <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS" />
+                </a>
+            </div>
+
+            <ul class="nav_menu" id="navMenu" role="menubar" aria-label="Main navigation">
+                <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+                <li role="none"><a role="menuitem" href="shop.html" aria-current="page">Shop</a></li>
+                <li role="none"><a role="menuitem" href="product details.html">Product Details</a></li>
+                <li role="none"><a role="menuitem" href="login.html">Login</a></li>
+                <li role="none"><a role="menuitem" href="contactUs.html">Contact</a></li>
+                <li role="none"><a role="menuitem" href="blog.html">About Us</a></li>
+            </ul>
+
+            <div class="nav_icons">
+                <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icon-btn" aria-label="Favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="badge">3</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Searchbar -->
+        <div class="searchbar" id="searchbar">
+            <div class="container">
+                <form action="#" role="search" aria-label="Site search">
+                    <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+                    <button type="button" class="close" id="searchClose" aria-label="Close search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero">
+        <div class="container hero_inner">
+            <div class="hero_text">
+                <h1 class="hero_title">Shop Page</h1>
+                <p class="hero_subtitle">Home — Products Page</p>
+            </div>
+            <div class="hero_image">
+                <img src="imgs/shop-banner.png" alt="Featured Sofa" />
+            </div>
+        </div>
+    </section>
+
+    <main class="container layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="toggle-sidebar-btn" id="sidebarToggle" aria-expanded="false">☰ Filters</button>
+
+            <div class="sidebar_panel" id="sidebarPanel" aria-hidden="true">
+                <div class="sidebar_section">
+                    <h3>Browse Category</h3>
+                    <ul>
+                        <li class="sidebar-hvr">Wooden Tables</li>
+                        <li class="sidebar-hvr">Sofas</li>
+                        <li class="sidebar-hvr">Plastic Tables</li>
+                        <li class="sidebar-hvr">Chairs</li>
+                        <li class="sidebar-hvr">Armchairs</li>
+                        <li class="sidebar-hvr">TV Units</li>
+                        <li class="sidebar-hvr">Beds</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar_section">
+                    <h3>Product Filter</h3>
+                    <ul>
+                        <li class="sidebar-hvr">Recliner Armchairs</li>
+                        <li class="sidebar-hvr">Accent Armchairs</li>
+                        <li class="sidebar-hvr">Rocking Armchairs</li>
+                        <li class="sidebar-hvr">Lounge Armchairs</li>
+                        <li class="sidebar-hvr">Wingback Armchairs</li>
+                        <li class="sidebar-hvr">Swivel Armchairs</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar_section">
+                    <h3>Color Filter</h3>
+                    <ul>
+                        <li class="sidebar-hvr">Beige</li>
+                        <li class="sidebar-hvr">Olive</li>
+                        <li class="sidebar-hvr">White</li>
+                        <li class="sidebar-hvr">Light Grey</li>
+                        <li class="sidebar-hvr">Dark Grey</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Products -->
+        <section class="products" aria-label="Products">
+
+            <!-- Cards -->
+            <article class="card">
+                <img src="imgs/IMG-the_arlo_chair.jpg" alt="The Arlo Chair" class="card_img" />
+                <h2 class="card_title">The Arlo Chair</h2>
+                <div class="card_price">18,495 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_luna_chair.jpg" alt="The Luna Chair" class="card_img" />
+                <h2 class="card_title">The Luna Chair</h2>
+                <div class="card_price">19,495 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_orion_chair.jpg" alt="The Orion Chair" class="card_img" />
+                <h2 class="card_title">The Orion Chair</h2>
+                <div class="card_price">19,995 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_cloud_plush_sofa.jpeg" alt="The Cloud Plush Sofa" class="card_img" />
+                <h2 class="card_title">The Cloud Plush Sofa</h2>
+                <div class="card_price">32,495 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_stanley_sofa.jpg" alt="The Stanley Sofa" class="card_img" />
+                <h2 class="card_title">The Stanley Sofa</h2>
+                <div class="card_price">29,995 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_belfort_velvet_sofa.jpeg" alt="The Belfort Velvet Sofa" class="card_img" />
+                <h2 class="card_title">The Belfort Velvet Sofa</h2>
+                <div class="card_price">28,495 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-catania_coastal_dining_set.jpeg" alt="Catania Coastal Dining Set" class="card_img" />
+                <h2 class="card_title">Catania Coastal Dining Set</h2>
+                <div class="card_price">45,565 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_nordic_oak_dining_set.jpeg" alt="The Nordic Oak Dining Set" class="card_img" />
+                <h2 class="card_title">The Nordic Oak Dining Set</h2>
+                <div class="card_price">40,955 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_abrey_dining_set.jpeg" alt="The Abrey Dining Set" class="card_img" />
+                <h2 class="card_title">The Abrey Dining Set</h2>
+                <div class="card_price">48,965 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_linea_coffee_table.png" alt="The Linea Coffee Table" class="card_img" />
+                <h2 class="card_title">The Linea Coffee Table</h2>
+                <div class="card_price">7,500 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_yarnic_coffee_table.jpeg" alt="The Yarnic Coffee Table" class="card_img" />
+                <h2 class="card_title">The Yarnic Coffee Table</h2>
+                <div class="card_price">6,495 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+
+            <article class="card">
+                <img src="imgs/IMG-the_aero_coffee_table.jpeg" alt="The Aero Coffee Table" class="card_img" />
+                <h2 class="card_title">The Aero Coffee Table</h2>
+                <div class="card_price">5,995 EGP</div>
+                <a href="cart.html" class="card_cta">
+                    <span>+ add to cart</span><i class="fa-regular fa-heart"></i>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Best Sellers -->
+    <section class="bestsellers">
+        <div class="container">
+            <div class="bestsellers_head">
+                <h2 class="section-title">Best Sellers</h2>
+                <div class="controls">
+                    <button class="btn-slider" id="prevSlide" aria-label="Previous">&#10094; Prev</button>
+                    <button class="btn-slider" id="nextSlide" aria-label="Next">Next &#10095;</button>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider_track" id="productRow" aria-live="polite">
+                    <div class="slider_col">
+                        <div class="product-card">
+                            <img src="imgs/best sellers/IMG-the_campiello_sofa.jpeg" alt="The Campiello Sofa" />
+                            <div class="product-name">The Campiello Sofa</div>
+                            <div class="product-cost">32,495 EGP</div>
+                        </div>
+                    </div>
+                    <div class="slider_col">
+                        <div class="product-card">
+                            <img src="imgs/best sellers/IMG-artiss_lounge_chair.jpg" alt="Artiss Lounge Chair" />
+                            <div class="product-name">Artiss Lounge Chair</div>
+                            <div class="product-cost">21,000 EGP</div>
+                        </div>
+                    </div>
+                    <div class="slider_col">
+                        <div class="product-card">
+                            <img src="imgs/best sellers/IMG-the_volta_dining_set.jpeg" alt="The Volta Dining Set" />
+                            <div class="product-name">The Volta Dining Set</div>
+                            <div class="product-cost">35,195 EGP</div>
+                        </div>
+                    </div>
+                    <div class="slider_col">
+                        <div class="product-card">
+                            <img src="imgs/best sellers/IMG-the_amalfi_armchair.png" alt="The Amalfi Armchair" />
+                            <div class="product-name">The Amalfi Armchair</div>
+                            <div class="product-cost">23,995 EGP</div>
+                        </div>
+                    </div>
+                    <div class="slider_col">
+                        <div class="product-card">
+                            <img src="imgs/best sellers/IMG-the_nikari_coffee_table.jpeg"
+                                alt="The Nikari Coffee Table" />
+                            <div class="product-name">The Nikari Coffee Table</div>
+                            <div class="product-cost">5,495 EGP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer">
+            <div class="footer_grid">
+                <!-- About -->
+                <div>
+                    <h3>About HABITUS</h3>
+                    <p>
+                        Premium furniture crafted for modern living. Comfort, quality, and timeless design.
+                    </p>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Shop -->
+                <div>
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">Sofas</a></li>
+                        <li><a href="shop.html">Chairs</a></li>
+                        <li><a href="shop.html">Tables</a></li>
+                        <li><a href="shop.html">Storage</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="blog.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#">
+                        <input type="email" placeholder="Email Address" />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript/shop.js"></script>
+</body>
+
+</html>

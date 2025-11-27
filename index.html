@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habitus - Furniture Shop</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+
+<body>
+  <!-- Dark mode toggle -->
+  <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="nav_left">
+        <button class="nav_toggle" id="navToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html" class="logo-link">
+          <img id="logo" class="logo" src="imgs/LOGOLIGHT.png" alt="HABITUS">
+        </a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="nav_menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="product details.html">Product Details</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+        <li><a href="blog.html">About Us</a></li>
+      </ul>
+
+      <!-- Icons -->
+      <div class="nav_icons">
+        <a href="#" class="icon-btn" id="searchBtn" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-btn" aria-label="Favorites">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html" class="icon-btn cart" aria-label="Cart">
+          <i class="fa-solid fa-cart-plus"></i>
+          <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Searchbar -->
+    <div class="searchbar" id="searchbar">
+      <div class="container">
+        <form action="#" role="search" aria-label="Site search">
+          <input type="text" placeholder="Search products, categories…" aria-label="Search" />
+          <button type="button" class="close" id="searchClose" aria-label="Close search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero_wrap">
+      <div class="hero_content">
+        <h1 class="hero_title">Luxury Furniture for Modern Living</h1>
+        <p class="hero_lead">
+          Discover timeless pieces crafted for comfort and elegance. From sofas and chairs to storage and tables,
+          elevate every room with HABITUS.
+        </p>
+        <div class="hero_cta">
+          <a class="btn" href="shop.html">Shop Now</a>
+          <a class="btn btn-dark" href="#featured">View Featured</a>
+        </div>
+      </div>
+      <div class="hero_img">
+        <img src="imgs/home-banner.png" alt="Cloth & Wood Sofa" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="cats">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Categories</h2>
+      </div>
+      <div class="grid grid-cats">
+        <article class="cat-card">
+          <h3>Sofas</h3>
+          <p>Premium comfort, modern silhouettes.</p>
+          <a href="shop.html">Explore now →</a>
+          <img src="imgs/feature-1.png" alt="Sofa" />
+        </article>
+        <article class="cat-card">
+          <h3>Chairs</h3>
+          <p>Ergonomic and stylish seating.</p>
+          <a href="shop.html">Explore now →</a>
+          <img src="imgs/feature-2.png" alt="Chair" />
+        </article>
+        <article class="cat-card">
+          <h3>Tables</h3>
+          <p>Dining and coffee tables that anchor spaces.</p>
+          <a href="shop.html">Explore now →</a>
+          <img src="imgs/feature-3.png" alt="Table" />
+        </article>
+        <article class="cat-card">
+          <h3>Storage</h3>
+          <p>Smart organization, minimal design.</p>
+          <a href="shop.html">Explore now →</a>
+          <img src="imgs/feature-4.png" alt="Storage" />
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products" id="featured">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+      </div>
+      <div class="grid grid-products">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_celine_wing_chair.jpg" alt="The Celine Wing Chair">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Celine Wing Chair</h3>
+            <div class="product-card_price">19,995 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_vienna_sofa.png" alt="The Vienna Sofa">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Vienna Sofa</h3>
+            <div class="product-card_price">31,240 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_nova_chair.jpg" alt="The Nova Chair">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Nova Chair</h3>
+            <div class="product-card_price">15,499 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_japandi_sofa.png" alt="The Japandi sofa">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Japandi Sofa</h3>
+            <div class="product-card_price">27,995 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_oleandro_dining_set.jpeg" alt="The Oleandro Dining Set">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Oleandro Dining Set</h3>
+            <div class="product-card_price">43,565 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_scandi_coffee_table.jpeg" alt="The Scandi Coffee Table">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Scandi Coffee Table</h3>
+            <div class="product-card_price">6,865 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_aritva_dining_set.png" alt="The Aritva Dining Set">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Aritva Dining Set</h3>
+            <div class="product-card_price">42,765 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card">
+          <img class="product-card_img" src="imgs/IMG-the_evangeline_table.jpeg" alt="The Evangeline Table">
+          <div class="product-card_body">
+            <h3 class="product-card_title">The Evangeline Table</h3>
+            <div class="product-card_price">7,865 EGP</div>
+            <div class="product-card_actions">
+              <a href="cart.html" class="btn btn-dark">Add to Cart</a>
+              <a href="#" class="icon-like"><i class="fa-regular fa-heart"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section class="promo">
+    <div class="container">
+      <div class="section-title">
+        <h2>Additional Services</h2>
+      </div>
+      <div class="promo_wrap">
+        <div>
+          <video src="imgs/Habitus Furniture promo video.mp4" muted controls autoplay loop></video>
+        </div>
+        <div class="services">
+          <article class="service">
+            <h3>Virtual Room Design</h3>
+            <hr>
+            <p>Visualize furniture in your own space using AR or a simple planner to reduce uncertainty and returns.</p>
+          </article>
+          <article class="service">
+            <h3>White-Glove Delivery & Assembly</h3>
+            <hr>
+            <p>Professionals deliver, assemble, and set up your furniture—and remove all packaging.</p>
+          </article>
+          <article class="service">
+            <h3>Custom Furniture Design</h3>
+            <hr>
+            <p>Tailored materials, sizes, and finishes to match your home’s aesthetic.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Sale -->
+  <section class="sale">
+    <div class="container">
+      <div class="sale_box">
+        <img class="sale_img" src="imgs/sale-pic.jpeg" alt="Weekly Sale">
+        <div>
+          <h2 class="sale_title">Weekly Sale – 50% Off All Products</h2>
+          <div class="countdown" id="countdown">
+            <div>Days<br><span id="d">00</span></div>
+            <div>Hours<br><span id="h">00</span></div>
+            <div>Minutes<br><span id="m">00</span></div>
+            <div>Seconds<br><span id="s">00</span></div>
+          </div>
+          <div class="sale_cta">
+            <input type="email" placeholder="Enter Email Address" aria-label="Email" />
+            <button class="btn" type="button">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="container">
+      <div class="content">
+        <p class="small">JOIN OUR NEWSLETTER</p>
+        <h2>Subscribe to get updates on new offers</h2>
+        <div class="form">
+          <input type="email" placeholder="Enter Email Address" required />
+          <button class="btn" type="button">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <div class="footer_grid">
+        <!-- About -->
+        <div>
+          <h3>About HABITUS</h3>
+          <p style="margin:0;color:#cfcfcf">
+            Premium furniture crafted for modern living. Comfort, quality, and timeless design.
+          </p>
+        </div>
+        <!-- Customer Service -->
+        <div>
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Shop -->
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">Sofas</a></li>
+            <li><a href="shop.html">Chairs</a></li>
+            <li><a href="shop.html">Tables</a></li>
+            <li><a href="shop.html">Storage</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="blog.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Email Address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Javascript/index.js"></script>
+</body>
+
+</html>
